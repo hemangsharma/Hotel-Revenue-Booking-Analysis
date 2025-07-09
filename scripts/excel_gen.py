@@ -26,7 +26,7 @@ profit_per_room = room_income[['Room', 'Profit']].copy()
 occupancy_analysis = room_income[['Room', 'Occupancy (%)', 'Avg Daily Tariff', 'Profit']].copy()
 
 # Save all to a multi-sheet Excel file
-with pd.ExcelWriter("../data/gen/Hotel_Analysis_Cleaned.xlsx", engine='xlsxwriter') as writer:
+with pd.ExcelWriter("../outputs/excel/Hotel_Analysis_Cleaned.xlsx", engine='xlsxwriter') as writer:
     room_income.to_excel(writer, index=False, sheet_name='Cleaned_Room_Income')
     bcom_data.to_excel(writer, index=False, sheet_name='Cleaned_Booking_Data')
     monthly_bookings.to_excel(writer, index=False, sheet_name='Monthly_Bookings')
