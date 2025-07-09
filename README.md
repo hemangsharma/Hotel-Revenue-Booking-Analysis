@@ -27,19 +27,18 @@ Both are located in the `data/` folder.
 
 ## 📦 Project Structure
 
-hotel_data_analysis/
-│
-├── data/ # Raw data (CSV)
-├── notebooks/ # Jupyter notebooks for data cleaning and analysis
-├── outputs/
-│ ├── reports/ # README, summary reports
-│ ├── graphs/ # Visualizations
-│ └── excel/ # Excel dashboards
-├── dashboards/
-│ ├── power_bi/ # Power BI reports (.pbix)
-│ └── tableau/ # Tableau workbook (.twbx)
-└── scripts/ # Automation scripts
-
+hotel_data_analysis/<br>
+│<br>
+|- data/ # Raw data (CSV)<br>
+|── notebooks/ # Jupyter notebooks for data cleaning and analysis<br>
+|── outputs/<br>
+| |── reports/ # README, summary reports<br>
+| |── graphs/ # Visualizations<br>
+| |── excel/ # Excel dashboards<br>
+|── dashboards/<br>
+| |── power_bi/ # Power BI reports (.pbix)<br>
+| |── tableau/ # Tableau workbook (.twbx)<br>
+|── scripts/ # Automation scripts<br>
 
 ---
 
