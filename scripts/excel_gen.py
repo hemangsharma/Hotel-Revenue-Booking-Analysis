@@ -1,4 +1,5 @@
 import pandas as pd
+import xlsxwriter
 
 # Load cleaned data
 room_income = pd.read_csv("../data/room_income.csv")
@@ -15,12 +16,14 @@ bcom_data['Booking Month'] = bcom_data['Booked on'].dt.to_period('M').astype(str
 # Monthly Bookings
 monthly_bookings = bcom_data.groupby(['Booking Month', 'Status']).size().unstack(fill_value=0).reset_index()
 
+# Calculate Profit (Accom + Other - Discount)
+room_income['Profit'] = room_income['Accom'] + room_income['Other'] - room_income['Discount']
+
 # Profit Per Room
-room_income['Profit'] = room_income['Total Income'] - room_income['Total Cost']
-profit_per_room = room_income[['Room No', 'Profit']].copy()
+profit_per_room = room_income[['Room', 'Profit']].copy()
 
 # Occupancy Analysis
-occupancy_analysis = room_income[['Room No', 'Occupancy %', 'Avg Rate', 'Profit']].copy()
+occupancy_analysis = room_income[['Room', 'Occupancy (%)', 'Avg Daily Tariff', 'Profit']].copy()
 
 # Save all to a multi-sheet Excel file
 with pd.ExcelWriter("../data/gen/Hotel_Analysis_Cleaned.xlsx", engine='xlsxwriter') as writer:
