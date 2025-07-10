@@ -1,12 +1,12 @@
 # Hotel Revenue & Booking Analysis
 
-## 📁 Project Overview
+## Project Overview
 
 This project provides a comprehensive revenue and reservation analysis for **Highfield Hotel** using historical data exported from booking systems and internal revenue reports. The goal is to derive actionable insights to improve room profitability, understand booking patterns, and support data-driven decision-making.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Analyze room-wise profitability and occupancy.
 - Identify high-performing and underperforming rooms.
@@ -16,7 +16,7 @@ This project provides a comprehensive revenue and reservation analysis for **Hig
 
 ---
 
-## 🧩 Data Sources
+## Data Sources
 
 - `room_income.csv`: Internal revenue and room utilization data.
 - `bcom_data.csv`: External Booking.com reservation data (arrival, payment, commission).
@@ -25,7 +25,7 @@ Both are located in the `data/` folder.
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 hotel_data_analysis/<br>
 │<br>
@@ -42,7 +42,7 @@ hotel_data_analysis/<br>
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 - **Python (Pandas, Matplotlib, Seaborn, Plotly)** — For data wrangling and analysis
 - **Excel** — Quick tabular dashboard and trend views
@@ -52,7 +52,7 @@ hotel_data_analysis/<br>
 
 ---
 
-## 📈 Key Insights Delivered
+## Key Insights Delivered
 
 - Net profit per room and room type
 - Commission losses and cancellation rate from Booking.com
@@ -62,7 +62,7 @@ hotel_data_analysis/<br>
 
 ---
 
-## 🔁 Monthly Automation
+## Monthly Automation
 
 - New data can be placed into the `data/` folder.
 - Run the notebook or automation script (`scripts/monthly_refresh.py`) to regenerate dashboards and reports.
@@ -70,7 +70,7 @@ hotel_data_analysis/<br>
 
 ---
 
-## 📬 Contact
+## Contact
 
 For improvements, issues or collaboration, please contact the data analytics team.
 
