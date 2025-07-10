@@ -28,7 +28,7 @@ Both are located in the `data/` folder.
 ## Project Structure
 
 hotel_data_analysis/<br>
-│<br>
+|<br>
 |- data/ # Raw data (CSV)<br>
 |── notebooks/ # Jupyter notebooks for data cleaning and analysis<br>
 |── outputs/<br>
