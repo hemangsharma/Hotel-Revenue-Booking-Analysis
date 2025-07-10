@@ -62,14 +62,6 @@ hotel_data_analysis/<br>
 
 ---
 
-## Monthly Automation
-
-- New data can be placed into the `data/` folder.
-- Run the notebook or automation script (`scripts/monthly_refresh.py`) to regenerate dashboards and reports.
-- Power BI and Tableau refresh templates link directly to processed Excel outputs.
-
----
-
 ## Contact
 
 For improvements, issues or collaboration, please contact the data analytics team.
